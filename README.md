@@ -2,20 +2,21 @@
 
 # To run the application follow the steps below
 
-1 - In terminal window: node app.js (or, to use nodemon to autorestart app when files are edited: nodemon app.js)
+1 - Download all files
 
-2 - In browser goto localhost:3000
+2 - Use "npm install" to install dependencies
+
+3 - Use "node app.js" to start the app on http://localhost:3000/
 
 # Typical flow
 
 1 -In a browser open localhost:3000
+
 2 -If a user name cookie does not exist, a form is displayed to enter it.
 
 3 -After the user name is submitted a "welcome" message is displayed with button to start flashcards.
 
-4 -A random question is displayed. The page has buttons to display the answer, show a hint and display another random card.
-
-The card also has a button to clear the user name and return to name input form.
+4 -A random question is displayed. The page has buttons to display the answer, show a hint and display another random card. The card also has a button to clear the user name and return to name input form.
 
 # Packages used
 
@@ -26,6 +27,13 @@ The card also has a button to clear the user name and return to name input form.
 3 - body-parser middleware
 
 4 - cookie-parser middleware
+
+# Technologies used
+Express
+Node
+Pug
+JavaScript
+CSS
 
 # Routes (i.e. localhost:3000/...)
 
@@ -97,51 +105,3 @@ the main application JS file, which is launched by Node.
 3-declares pug as the template renderer.
 4-declares files containing routes for explicitly defined routes.
 5-declares error handling middleware
-
-
-
-Flashcard study app, as taught by Treehouse in the "Express Basics" course (https://teamtreehouse.com/library/express-basics-2)
-
-Using Express, Mongoose, Pug and DB on MongoDB Atlas.
-
-# To run the app locally:
-
-Download all files
-
-Use "npm install" to install dependencies
-
-Use "node app.js" to start the app on http://localhost:3000/
-
-Notes:
-
-Most of the code was done during the course "Express Basics" course on Treehouse.
-
-Here are some of the features that I added, that were not covered in the course:
-
-All the flashcards are saved to a MongoDB on MongoDB Atlas
-
-Multiple Flashcards topic and the ability to switch between them
-
-Ability to add or delete flashcards topics (the entire /edit-cards page)
-
-Keeping track of which cards have been "already seen" using cookies
-
-Randomizing the order in which cards appear
-
-
-
-This project creates a user authentication system with Express, MongoDB/Mongoose and Pug. A user can sign up with a username and password, log in, and log out of the app. Once logged in, a flashcard game containing videogame trivia is accessible to the user.
-
-
-
-# Technologies used
-Express
-Node
-Pug
-JavaScript
-CSS
-
-# Future improvements
-Full UX redesign
-Flashcard database with categories
-Add users/authentication
