@@ -109,3 +109,8 @@ the main application JS file, which is launched by Node.
 4-declares files containing routes for explicitly defined routes.
 
 5-declares error handling middleware
+
+![1](https://user-images.githubusercontent.com/26305085/55689584-30a8bb00-5954-11e9-826f-89b52d2d25ee.png)
+![2](https://user-images.githubusercontent.com/26305085/55689585-30a8bb00-5954-11e9-9958-f267b3adede5.png)
+![3](https://user-images.githubusercontent.com/26305085/55689586-30a8bb00-5954-11e9-812b-3f8c6ab9dbe1.png)
+![4](https://user-images.githubusercontent.com/26305085/55689587-31415180-5954-11e9-83e4-062f6e479184.png)
