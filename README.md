@@ -101,7 +101,11 @@ Pug templates called by route functions, extended shared templates and included 
 the main application JS file, which is launched by Node.
 
 1-requires body-parser package
+
 2-requires cookie-parser package
+
 3-declares pug as the template renderer.
+
 4-declares files containing routes for explicitly defined routes.
+
 5-declares error handling middleware
