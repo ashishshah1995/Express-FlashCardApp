@@ -1,20 +1,34 @@
 # Flashcard application 
 
-To launch app
-In terminal window: node app.js (or, to use nodemon to autorestart app when files are edited: nodemon app.js)
-in browser goto localhost:3000
+#To run the application follow the steps below
+
+1 - In terminal window: node app.js (or, to use nodemon to autorestart app when files are edited: nodemon app.js)
+
+2 - In browser goto localhost:3000
+
 Typical flow
+
 In a browser open localhost:3000
 If a user name cookie does not exist, a form is displayed to enter it.
+
 After the user name is submitted a "welcome" message is displayed with button to start flashcards.
+
 A random question is displayed. The page has buttons to display the answer, show a hint and display another random card.
+
 The card also has a button to clear the user name and return to name input form.
-Packages used
+
+#Packages used
+
 Express framework
+
 Pug to render templates
+
 body-parser middleware
+
 cookie-parser middleware
-Routes (i.e. localhost:3000/...)
+
+#Routes (i.e. localhost:3000/...)
+
 All routes use response.render and Pug template to generate pages.
 
 Templates utilize a shared template (e.g extends layout) which in turn includes template pieces (e.g. include includes/header.pug).
@@ -53,7 +67,7 @@ All errors should be captured and redirected to an error page which displays the
 
 If the card index in the URL is invalid a 404 error is displayed.
 
-Project file structure
+#Project file structure
 /data
 the flat file containing the questions in json format.
 
@@ -114,17 +128,10 @@ Keeping track of which cards have been "already seen" using cookies
 Randomizing the order in which cards appear
 
 
-A flashcard app containing videogame trivia with a user authentication signup & login.
 
 This project creates a user authentication system with Express, MongoDB/Mongoose and Pug. A user can sign up with a username and password, log in, and log out of the app. Once logged in, a flashcard game containing videogame trivia is accessible to the user.
 
-I combined and expanded upon what I learned from two tutorial series on Team Treehouse (Express Basics & User Authentication with Express and Mongo) to code this. It is heavily commented so that other Treehouse students can easily understand the code and use it along with these tutorials as additional practice.
 
-
-
-
-Flashcard App
-A practice app built during Unit 6 of the Team Treehouse Full Stack JavaScript Techdegree. A user can input their name, then start a flashcard game with JavaScript-related questions and answers.
 
 Technologies used
 Express
