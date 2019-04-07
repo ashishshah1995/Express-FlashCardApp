@@ -1,12 +1,12 @@
 # Flashcard application 
 
-#To run the application follow the steps below
+# To run the application follow the steps below
 
 1 - In terminal window: node app.js (or, to use nodemon to autorestart app when files are edited: nodemon app.js)
 
 2 - In browser goto localhost:3000
 
-Typical flow
+# Typical flow
 
 In a browser open localhost:3000
 If a user name cookie does not exist, a form is displayed to enter it.
@@ -17,7 +17,7 @@ A random question is displayed. The page has buttons to display the answer, show
 
 The card also has a button to clear the user name and return to name input form.
 
-#Packages used
+# Packages used
 
 Express framework
 
@@ -27,27 +27,27 @@ body-parser middleware
 
 cookie-parser middleware
 
-#Routes (i.e. localhost:3000/...)
+# Routes (i.e. localhost:3000/...)
 
 All routes use response.render and Pug template to generate pages.
 
 Templates utilize a shared template (e.g extends layout) which in turn includes template pieces (e.g. include includes/header.pug).
 
-/ (root)
+# / (root)
 Displays user name in a welcome box if the username cookie is set, otherwise it redirects to /hello. Page has a Begin button to display a flashcard.
 
 Next to the Welcome box is a button to clear the user name that submits a post to /goodbye.
 
-/hello, get request
+# /hello, get request
 Displays a form to submit a user name if there is no username cookie, otherwise redirects to root route. The welcome box displays the message "hello, student". The name entered is submitted with a post request.
 
-/hello, post request
+# /hello, post request
 The user name is extracted from the request and is saved as a cookie. The client is then redirected to root route.
 
-/goodbye
+# /goodbye
 Defined for only post requests. Clears the user name cookie and redirects to /hello.
 
-/cards/#?side=type
+# /cards/#?side=type
 Display the card at index # from the cards array. Type is either the value question or answer. The question/answer and hint are passed to the Pug template using response.locals properties. If the side displayed is the question the HTML includes a JS script which adds a Show Hint button to display the hint when clicked.
 
 Both sides have buttons to flip to the other side and display another random card.
@@ -56,39 +56,40 @@ The welcome box described above for the root and /hello routes is displayed. Dis
 
 If the side query parameter is neither question or answer the question side is displayed.
 
-/cards
+# /cards
 Redirects to the question side of random card.
 
-/about
+# /about
 Text about the app.
 
-error handling
+# error handling
 All errors should be captured and redirected to an error page which displays the error status, a "desktop" graphic and the stack dump in a scrolling window.
 
 If the card index in the URL is invalid a 404 error is displayed.
 
-#Project file structure
-/data
+# Project file structure
+# /data
 the flat file containing the questions in json format.
 
-/js-express-basics-flashcard-assets
+# /js-express-basics-flashcard-assets
 the designer html files and images.
 
-/node_modules
+# /node_modules
 packages install by npm.
 
-/public
+# /public
 static assets: images, client-side JS file, CSS files.
 
-/routes
+# /routes
 JS files that explicitly define routes (e.g. /cards, /hello).
 
 cards.js and index.js define multiple routes
 about.js defines one route (using different syntax than cards.js, index.js)
-/views
+
+# /views
 Pug templates called by route functions, extended shared templates and included partial templates.
 
-app.js
+# app.js
 the main application JS file, which is launched by Node.
 
 requires body-parser package
@@ -103,7 +104,7 @@ Flashcard study app, as taught by Treehouse in the "Express Basics" course (http
 
 Using Express, Mongoose, Pug and DB on MongoDB Atlas.
 
-To run the app locally:
+# To run the app locally:
 
 Download all files
 
@@ -133,14 +134,14 @@ This project creates a user authentication system with Express, MongoDB/Mongoose
 
 
 
-Technologies used
+# Technologies used
 Express
 Node
 Pug
 JavaScript
 CSS
 
-Future improvements
+# Future improvements
 Full UX redesign
 Flashcard database with categories
 Add users/authentication
