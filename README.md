@@ -8,24 +8,24 @@
 
 # Typical flow
 
-In a browser open localhost:3000
-If a user name cookie does not exist, a form is displayed to enter it.
+1 -In a browser open localhost:3000
+2 -If a user name cookie does not exist, a form is displayed to enter it.
 
-After the user name is submitted a "welcome" message is displayed with button to start flashcards.
+3 -After the user name is submitted a "welcome" message is displayed with button to start flashcards.
 
-A random question is displayed. The page has buttons to display the answer, show a hint and display another random card.
+4 -A random question is displayed. The page has buttons to display the answer, show a hint and display another random card.
 
 The card also has a button to clear the user name and return to name input form.
 
 # Packages used
 
-Express framework
+1 - Express framework
 
-Pug to render templates
+2 - Pug to render templates
 
-body-parser middleware
+3 - body-parser middleware
 
-cookie-parser middleware
+4 - cookie-parser middleware
 
 # Routes (i.e. localhost:3000/...)
 
@@ -92,11 +92,11 @@ Pug templates called by route functions, extended shared templates and included 
 # app.js
 the main application JS file, which is launched by Node.
 
-requires body-parser package
-requires cookie-parser package
-declares pug as the template renderer.
-declares files containing routes for explicitly defined routes.
-declares error handling middleware
+1-requires body-parser package
+2-requires cookie-parser package
+3-declares pug as the template renderer.
+4-declares files containing routes for explicitly defined routes.
+5-declares error handling middleware
 
 
 
