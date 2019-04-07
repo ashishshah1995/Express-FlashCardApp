@@ -1,4 +1,4 @@
-Flashcard application with cookie to store user name
+# Flashcard application 
 
 To launch app
 In terminal window: node app.js (or, to use nodemon to autorestart app when files are edited: nodemon app.js)
