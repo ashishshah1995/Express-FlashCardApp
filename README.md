@@ -18,22 +18,17 @@
 
 4 -A random question is displayed. The page has buttons to display the answer, show a hint and display another random card. The card also has a button to clear the user name and return to name input form.
 
-# Packages used
+# Packages and Technologies used
 
 1 - Express framework
 
 2 - Pug to render templates
 
+3 - Node, Javascript and CSS
+
 3 - body-parser middleware
 
 4 - cookie-parser middleware
-
-# Technologies used
-Express
-Node
-Pug
-JavaScript
-CSS
 
 # Routes (i.e. localhost:3000/...)
 
